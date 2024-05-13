@@ -16,6 +16,11 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+ALLOWED_HOSTS = [
+    "fondly.ai",
+]
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
@@ -50,13 +55,6 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
 ]
-
-CORS_ALLOWED_ORIGINS = [
-    "https://fondly.ai",
-    "http://fondly.ai",
-    "http://127.0.0.1:4200",
-]
-
 
 
 
