@@ -50,6 +50,9 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
 ]
 
+ALLOWED_HOSTS = [
+    'fondly.ai'
+]
 
 CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:4200',
