@@ -50,16 +50,12 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
 ]
-CORS_ALLOW_ALL_ORIGINS = True
-
-ALLOWED_HOSTS = [
-    "https://fondly.ai",
-]
-
 
 CORS_ALLOWED_ORIGINS = [
     "https://fondly.ai",
+    "http://fondly.ai",
 ]
+
 
 
 
