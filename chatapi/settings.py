@@ -51,7 +51,8 @@ MIDDLEWARE = [
 ]
 
 ALLOWED_HOSTS = [
-    'fondly.ai'
+    'fondly.ai',
+    'localhost'
 ]
 
 CORS_ALLOWED_ORIGINS = [

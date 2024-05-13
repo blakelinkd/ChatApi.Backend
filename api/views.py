@@ -14,8 +14,7 @@ fake = Faker()
 
 class MessageView(APIView):
     def get(self, request, format=None):
-        # messages = [get_fake_message() for _ in range(10)]
-        messages = Message.objects.all()
+        messages = Message.objects.all().order_by('-timestamp')
         serializer = MessageSerializer(messages, many=True)
         return Response(serializer.data)
 
