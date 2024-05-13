@@ -59,7 +59,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:4200",
     "https://blakelink.us",
-    "fondly.ai",
+    "https://fondly.ai",
 
 ]
 
