@@ -54,7 +54,8 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = [
+
+ALLOWED_HOSTS = [
     "http://127.0.0.1:4200",
     "https://blakelink.us",
 ]
