@@ -56,6 +56,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:4200",
+    "https://blakelink.us",
 ]
 
 ROOT_URLCONF = 'chatapi.urls'
