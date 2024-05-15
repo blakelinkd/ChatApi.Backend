@@ -1,3 +1,4 @@
+from datetime import datetime, timezone
 import json
 import re
 from rest_framework.views import APIView
@@ -13,6 +14,7 @@ from .models import Message
 fake = Faker()
 
 class MessageView(APIView):
+    @csrf_exempt
     def get(self, request, format=None):
         messages = Message.objects.all().order_by('-timestamp')
         serializer = MessageSerializer(messages, many=True)
